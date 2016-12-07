@@ -8,6 +8,10 @@ public class PlayerController : MonoBehaviour {
 
 	//Player animator
 	private Animator playerAnim;
+	//If the player is facing to some direction
+	private bool playerMoving;
+	//Record the las direction of the player
+	private Vector2 lastMovement;
 
 	// Use this for initialization
 	void Start () {
@@ -20,19 +24,29 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		playerMoving = false;
+
 //Here i make an tranlate to move the player getting the axis
 
 		//Moving to the right and the left
 		if(Input.GetAxisRaw ("Horizontal") > 0.5f || Input.GetAxisRaw ("Horizontal") < -0.5f){
 			transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
+			playerMoving = true;
+			lastMovement = new Vector2 (Input.GetAxisRaw ("Horizontal"), 0f);
 		}
 
 		//Moving up and Down
 		if(Input.GetAxisRaw ("Vertical") > 0.5f || Input.GetAxisRaw ("Vertical") < -0.5f){
 			transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical") * moveSpeed * Time.deltaTime, 0f));
+			playerMoving = true;
+			lastMovement = new Vector2 (0f, Input.GetAxisRaw ("Vertical"));
 		}
 
+		//Here it's where i ser the animator
 		playerAnim.SetFloat ("MoveX", Input.GetAxisRaw ("Horizontal"));
 		playerAnim.SetFloat ("MoveY", Input.GetAxisRaw ("Vertical"));
+		playerAnim.SetBool ("PlayerMoving", playerMoving);
+		playerAnim.SetFloat ("LastMoveX", lastMovement.x);
+		playerAnim.SetFloat ("LastMoveY", lastMovement.y);
 	}
 }
