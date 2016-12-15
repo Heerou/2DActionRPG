@@ -2,7 +2,7 @@
 
 Unity tutorial for an 2D action RPG
 
-Unity Version: 5.4.0p1
+Unity Version: 5.5.0f3
 
 Made with the help of: @gamesplusjames
 
