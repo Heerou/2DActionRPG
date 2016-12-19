@@ -3,6 +3,7 @@
 Unity tutorial for an 2D action RPG
 
 Unity Version: 5.5.0f3
+Tiled Map Editor: 0.17.2
 
 Made with the help of: @gamesplusjames
 
