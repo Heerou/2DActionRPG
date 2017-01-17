@@ -4816,6 +4816,21 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23737416862977300, guid: 836be45a1441d2145a42530ca7d2120f,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1071742923
+      objectReference: {fileID: 0}
+    - target: {fileID: 23414340560886204, guid: 836be45a1441d2145a42530ca7d2120f,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1071742923
+      objectReference: {fileID: 0}
+    - target: {fileID: 23119992638799852, guid: 836be45a1441d2145a42530ca7d2120f,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -191989517
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 836be45a1441d2145a42530ca7d2120f, type: 2}
   m_IsPrefabParent: 0
