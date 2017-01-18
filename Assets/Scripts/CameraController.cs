@@ -11,6 +11,9 @@ public class CameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		//Don't destroy when the object loads
+		DontDestroyOnLoad (transform.gameObject);
 		
 	}
 	

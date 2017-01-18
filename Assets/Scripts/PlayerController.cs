@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour {
 		playerAnim = GetComponent<Animator> ();
 
 		playerRigidBody = GetComponent<Rigidbody2D> ();
+
+		//Don't destroy when the object loads
+		DontDestroyOnLoad (transform.gameObject);
 	
 	}
 	
