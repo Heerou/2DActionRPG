@@ -13,7 +13,9 @@ public class PlayerController : MonoBehaviour {
 	//If the player is facing to some direction
 	private bool playerMoving;
 	//Record the las direction of the player
-	private Vector2 lastMovement;
+	public Vector2 lastMovement;
+	//If the player exist. static makes that only the one that have the script added has the bool
+	private static bool playerExists;
 
 	// Use this for initialization
 	void Start () {
@@ -23,8 +25,14 @@ public class PlayerController : MonoBehaviour {
 
 		playerRigidBody = GetComponent<Rigidbody2D> ();
 
-		//Don't destroy when the object loads
-		DontDestroyOnLoad (transform.gameObject);
+		if(!playerExists) {
+			playerExists = true;
+			//Doesn't destroy object when the scene loads
+			DontDestroyOnLoad (transform.gameObject);
+		}
+		else {
+			Destroy (gameObject);
+		}
 	
 	}
 	

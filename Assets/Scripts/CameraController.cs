@@ -8,12 +8,21 @@ public class CameraController : MonoBehaviour {
 	public GameObject followTarget;
 	private Vector3 targetPosition;
 	public float moveSpeed;
+	//If the camera exist. static makes that only the one that have the script added has the bool
+	private static bool cameraExists;
 
 	// Use this for initialization
 	void Start () {
 
-		//Don't destroy when the object loads
-		DontDestroyOnLoad (transform.gameObject);
+		if (!cameraExists) {
+
+			cameraExists = true;
+			//Doesn't destroy object when the scene loads
+			DontDestroyOnLoad (transform.gameObject);
+		}
+		else {
+			Destroy (gameObject);
+		}
 		
 	}
 	
