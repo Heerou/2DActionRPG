@@ -422,7 +422,7 @@ MonoBehaviour:
   moveSpeed: 5
   timeBetweenMove: 2
   timeToMove: 1
-  waitToReload: 0
+  waitToReload: 2
 --- !u!50 &194903156
 Rigidbody2D:
   serializedVersion: 4
@@ -531,11 +531,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4413241761853020, guid: 51225b97bad20da4abfb82c3028b223c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -13.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4413241761853020, guid: 51225b97bad20da4abfb82c3028b223c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.69
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4413241761853020, guid: 51225b97bad20da4abfb82c3028b223c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1273,7 +1273,7 @@ MonoBehaviour:
   moveSpeed: 5
   timeBetweenMove: 2
   timeToMove: 1
-  waitToReload: 0
+  waitToReload: 2
 --- !u!1 &420654200
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,6 +2162,35 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &689949706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 689949707}
+  m_Layer: 0
+  m_Name: Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &689949707
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 689949706}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0.375, y: 0.253, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1786687599}
+  m_Father: {fileID: 903678426}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &707936994
 GameObject:
   m_ObjectHideFlags: 0
@@ -3491,11 +3520,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4474469676850228, guid: 9a5126fd4d4a64743b2b54ba8cbb3e0a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -12.81
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4474469676850228, guid: 9a5126fd4d4a64743b2b54ba8cbb3e0a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.22
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4474469676850228, guid: 9a5126fd4d4a64743b2b54ba8cbb3e0a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4536,8 +4565,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -848113205
-  m_SortingOrder: 0
+  m_SortingLayerID: 1829556053
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e909a2e374230164b826772efaba27a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4549,10 +4578,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1786687597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8100004, y: 0.22000003, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 903678426}
+  m_Father: {fileID: 689949707}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1786687600
