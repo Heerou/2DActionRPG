@@ -46,23 +46,23 @@ public class SlimeEnemyController : MonoBehaviour {
 		 * the range to the next move and the direction and the distance of the enemy movement.
 		*/
 
-		if(moving){
+		if(moving) {
 
 			timeToMoveCounter -= Time.deltaTime;
 			slimeRigidbody.velocity = moveDirection;
 
-			if (timeToMoveCounter < 0f){
+			if (timeToMoveCounter < 0f) {
 				moving = false;
 				//timeBetweenMoveCounter = timeBetweenMove;
 				timeBetweenMoveCounter = Random.Range (timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
 			}
 		}
-		else{
+		else {
 
 			timeBetweenMoveCounter -= Time.deltaTime;
 			slimeRigidbody.velocity = Vector2.zero;
 
-			if(timeBetweenMoveCounter < 0f){
+			if(timeBetweenMoveCounter < 0f) {
 				moving = true;
 				//timeToMoveCounter = timeToMove;
 				timeToMoveCounter = Random.Range (timeToMove * 0.75f, timeToMove * 1.25f);
@@ -73,10 +73,10 @@ public class SlimeEnemyController : MonoBehaviour {
 
 
 		//If it's true reload the level
-		if(reloading){
+		if(reloading) {
 			
 			waitToReload -= Time.deltaTime;
-			if(waitToReload < 0f) {
+			if(waitToReload < 0) {
 				Application.LoadLevel (Application.loadedLevel);
 				thePlayer.SetActive (true);
 			}
@@ -85,15 +85,16 @@ public class SlimeEnemyController : MonoBehaviour {
 	}
 
 	//Collision between colliders
-	void OnCollisionEnter2D(Collision2D collider){
+	void OnCollisionEnter2D(Collision2D collider) {
 
-		//If the two colliders touch
-		if (collider.gameObject.name == "Player")
-
+		//If the two colliders touch Insta kill
+		/*
+		if (collider.gameObject.tag == "Player" && collider.gameObject.name == "Player") {
 			//Deactivates the player
 			collider.gameObject.SetActive (false);
 			Debug.Log ("You Hit me, man...");
 			reloading = true;
 			thePlayer = collider.gameObject;
+		}*/
 	}
 }
