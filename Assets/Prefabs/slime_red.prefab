@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 50360785602859290}
   - component: {fileID: 114555194606799790}
   - component: {fileID: 114551623414123302}
+  - component: {fileID: 114046871790420350}
   m_Layer: 0
   m_Name: slime_red
   m_TagString: Enemy
@@ -96,6 +97,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114046871790420350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987121548413712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b3f7606612807b4c9325bcfe17d92c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyMaxHealth: 5
+  enemyCurrentHealth: 0
 --- !u!114 &114551623414123302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,7 +166,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1829556053
+  m_SortingLayerID: -1406510651
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4d8d7d877365f7345b46d32416e49a9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

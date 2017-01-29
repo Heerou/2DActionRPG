@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class AttackEnemy : MonoBehaviour {
 
+	public int damageToGive;
+	public GameObject damageBurst;
+	public Transform hitPoint;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -18,8 +22,12 @@ public class AttackEnemy : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D collision){
 		
 		if (collision.gameObject.tag == "Enemy"){
-			Destroy (collision.gameObject);
+			//Destroy (collision.gameObject);
+			//I get the health manager and i put the damage
+			collision.gameObject.GetComponent<EnemyHealthManager> ().HurtEnemy(damageToGive);
 			Debug.Log ("It's an enemy");
+			//Creates the particle in the world
+			Instantiate (damageBurst, hitPoint.position, hitPoint.rotation);
 		}
 	}
 }
