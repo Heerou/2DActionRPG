@@ -565,26 +565,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 1315448832773088, guid: 21ebc5dc0172ffd4e830a43ad8c20638, type: 2}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 114688944570636932, guid: 21ebc5dc0172ffd4e830a43ad8c20638,
         type: 2}
-      propertyPath: damageToGive
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114688944570636932, guid: 21ebc5dc0172ffd4e830a43ad8c20638,
-        type: 2}
-      propertyPath: damageBurst
+      propertyPath: damageNumber
       value: 
-      objectReference: {fileID: 1976089604198580, guid: 78230f96317da8d47b31b79e7bb6bf12,
+      objectReference: {fileID: 1585930033598536, guid: e744a0cca4fa58e4c8466634d637b067,
         type: 2}
-    - target: {fileID: 114688944570636932, guid: 21ebc5dc0172ffd4e830a43ad8c20638,
-        type: 2}
-      propertyPath: hitPoint
-      value: 
-      objectReference: {fileID: 853387531}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21ebc5dc0172ffd4e830a43ad8c20638, type: 2}
   m_IsPrefabParent: 0
@@ -2052,11 +2038,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!4 &692897899 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4386548247270718, guid: 21ebc5dc0172ffd4e830a43ad8c20638,
-    type: 2}
-  m_PrefabInternal: {fileID: 214236188}
 --- !u!1 &707936994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,34 +2230,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &853387530
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 853387531}
-  m_Layer: 0
-  m_Name: HitPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &853387531
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 853387530}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.503, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 692897899}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &903678420 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1315448832773088, guid: 21ebc5dc0172ffd4e830a43ad8c20638,

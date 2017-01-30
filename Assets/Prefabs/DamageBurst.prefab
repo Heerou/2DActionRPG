@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4257183834563052}
   - component: {fileID: 198885218821064706}
   - component: {fileID: 199458887850850428}
+  - component: {fileID: 114856258437905544}
   m_Layer: 0
   m_Name: DamageBurst
   m_TagString: World
@@ -41,6 +42,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114856258437905544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1976089604198580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73efbfd36d00b464aabae08b0446c4a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestroy: 1
 --- !u!198 &198885218821064706
 ParticleSystem:
   m_ObjectHideFlags: 1

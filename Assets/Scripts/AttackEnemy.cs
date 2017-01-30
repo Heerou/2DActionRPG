@@ -7,6 +7,7 @@ public class AttackEnemy : MonoBehaviour {
 	public int damageToGive;
 	public GameObject damageBurst;
 	public Transform hitPoint;
+	public GameObject damageNumber;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,9 @@ public class AttackEnemy : MonoBehaviour {
 			Debug.Log ("It's an enemy");
 			//Creates the particle in the world
 			Instantiate (damageBurst, hitPoint.position, hitPoint.rotation);
+			//Shows the damageNumber
+			var clone = (GameObject)Instantiate(damageNumber, hitPoint.position, Quaternion.Euler(Vector3.zero));
+			clone.GetComponent<FloatingNumbers> ().damageNumber = damageToGive;
 		}
 	}
 }
