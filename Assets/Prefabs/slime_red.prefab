@@ -110,6 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMaxHealth: 5
   enemyCurrentHealth: 0
+  expToGive: 2
 --- !u!114 &114551623414123302
 MonoBehaviour:
   m_ObjectHideFlags: 1
