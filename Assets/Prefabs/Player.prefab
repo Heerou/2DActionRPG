@@ -225,8 +225,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4
+  diagonalMoveModifier: 0.75
   lastMovement: {x: 0, y: 0}
   playerAttackTime: 0.5
+  startPoint: 
 --- !u!114 &114688944570636932
 MonoBehaviour:
   m_ObjectHideFlags: 1

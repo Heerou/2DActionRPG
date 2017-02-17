@@ -844,6 +844,11 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114833331988949554, guid: e5aa1e3be76fba943825898bb4e11293,
+        type: 2}
+      propertyPath: diagonalMoveModifier
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: e5aa1e3be76fba943825898bb4e11293, type: 2}
@@ -2772,6 +2777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4
+  diagonalMoveModifier: 0.75
   lastMovement: {x: 0, y: 0}
   playerAttackTime: 0.5
   startPoint: 
