@@ -21,6 +21,9 @@ public class PlayerController : MonoBehaviour {
 	public float playerAttackTime;
 	private float playerAttackTimeCounter;
 
+	//Start point of the player
+	public string startPoint;
+
 	// Use this for initialization
 	void Start () {
 

@@ -6,9 +6,12 @@ public class LoadNewScene : MonoBehaviour {
 
 	public string levelToLoad;
 
+	public string exitPoint;
+	private PlayerController thePlayerExit;
+
 	// Use this for initialization
 	void Start () {
-		
+		thePlayerExit = FindObjectOfType<PlayerController> ();
 	}
 	
 	// Update is called once per frame
@@ -21,6 +24,7 @@ public class LoadNewScene : MonoBehaviour {
 
 		if(other.gameObject.name == "Player"){
 			Application.LoadLevel (levelToLoad);
+			thePlayerExit.startPoint = exitPoint;
 		}
 	}
 }
