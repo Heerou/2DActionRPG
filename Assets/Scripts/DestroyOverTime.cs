@@ -13,6 +13,7 @@ public class DestroyOverTime : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//Destroys the damage number of the enemies
 		timeToDestroy -= Time.deltaTime;
 
 		if (timeToDestroy <= 0){
